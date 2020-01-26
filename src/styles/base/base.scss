@@ -3,6 +3,7 @@
 @import './layout.scss';
 @import './landmarks.scss';
 @import './classes.scss';
+@import './form-elements.scss';
 
 html {
   scroll-behavior: smooth;
@@ -10,5 +11,27 @@ html {
 
 body {
   @extend %font-roboto;
+  background-color: $light-grey;
   margin: 0;
+}
+
+ul, 
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+  outline: none; // active state fills this accessibility requirement
+
+  &:active, 
+  &:hover,
+  &:focus {
+    color: $light-coral;
+    padding-bottom: 5px;
+    border-bottom: solid 1px $light-coral;
+  }
 }
