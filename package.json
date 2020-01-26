@@ -1,0 +1,20 @@
+{
+  "name": "nrv-dev-styleguide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass src/styles/styles.scss -o=public --output-style=compressed -w",
+    "build": "node-sass src/styles/styles.scss -o=public --output-style=compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://joseph-w-bayes@dev.azure.com/joseph-w-bayes/nrv-dev-styleguide/_git/nrv-dev-styleguide"
+  },
+  "author": "",
+  "license": "ISC",
+  "private": true,
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

@@ -1,0 +1,14 @@
+@import '../sass.scss';
+@import './colors.scss';
+@import './layout.scss';
+@import './landmarks.scss';
+@import './classes.scss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @extend %font-roboto;
+  margin: 0;
+}

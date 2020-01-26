@@ -1,0 +1,21 @@
+@import '../sass.scss';
+@import '../base/classes.scss';
+
+.navigation-component {
+  height: 100%;
+  width: 100%;
+
+  .logo {
+    width: 70px;
+  }
+
+  @media (min-width: $tablet) {
+    .logo {
+      width: 220px;
+    }
+  }
+  
+  @media (min-width: $desktop) {
+
+  }
+}

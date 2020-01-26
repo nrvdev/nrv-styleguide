@@ -1,0 +1,31 @@
+@import '../sass.scss';
+
+.tablet,
+.tablet-up,
+.desktop {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .tablet {
+    display: block;
+  }
+
+  .tablet-up {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .tablet {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+}

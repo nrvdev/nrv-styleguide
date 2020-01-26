@@ -1,0 +1,29 @@
+@import '../sass.scss';
+
+header,
+main,
+footer {
+  outline: none;
+}
+
+header {
+  height: 70px;
+}
+
+main {
+
+}
+
+footer {
+
+}
+
+@media (min-width: $tablet) {
+  header {
+    height: 80px;
+  }
+}
+
+@media (min-width: $desktop) {
+
+}
