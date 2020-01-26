@@ -10,3 +10,33 @@
 .hidden {
   visibility: hidden;
 }
+
+.background-wrapper {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.standard-margins {
+  margin: 40px;
+}
+
+.standard-padding {
+  padding: 40px;
+}
+
+@media (min-width: $tablet) {
+
+}
+
+@media (min-width: $desktop) {
+  .standard-margins {
+    margin-left: calc((100vw - 1140px) / 2);
+    margin-right: calc((100vw - 1140px) / 2);
+  }
+
+  .standard-padding {
+    padding-left: calc((100vw - 1140px) / 2);
+    padding-right: calc((100vw - 1140px) / 2);
+  }
+}

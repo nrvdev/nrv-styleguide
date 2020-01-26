@@ -1,12 +1,47 @@
 @import '../sass.scss';
 
 .hero-component {
+  .background-wrapper {
+    background-image: url('./assets/images/hero-mobile.jpg');
+  }
+
+  .lead {
+    @include rem(font-size, 26px);
+    margin: 0;
+    height: 400px;
+    padding-bottom: 0;
+  }
+
+  .follow {
+    @include rem(font-size, 14px);
+    font-weight: normal;
+    color: $medium-grey-2;
+    text-align: center;
+  }
 
   @media (min-width: $tablet) {
-
+    .title {
+      padding-top: 80px;
+      text-align: center;
+    }
   }
   
   @media (min-width: $desktop) {
+    .background-wrapper {
+      background-image: url('./assets/images/hero-full.jpg');
+    }
 
+    .lead {
+      @include rem(font-size, 70px);
+      font-weight: bold;
+      width: 75%;
+      max-width: 1100px;
+      height: 800px;
+      padding-top: 80px;
+    }
+
+    .follow {
+      @include rem(font-size, 20px);
+    }
   }
 }
