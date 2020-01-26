@@ -4,6 +4,7 @@
 @import './landmarks.scss';
 @import './classes.scss';
 @import './form-elements.scss';
+@import './headings.scss';
 
 html {
   scroll-behavior: smooth;
@@ -34,5 +35,21 @@ a {
     color: $light-coral;
     padding-bottom: 5px;
     border-bottom: solid 1px $light-coral;
+  }
+}
+
+p {
+  @include rem(font-size, 14px);
+  font-weight: normal;
+}
+
+@media (min-width: $tablet) {
+
+}
+
+@media (min-width: $desktop) {
+  p {
+    @include rem(font-size, 20px);
+    font-weight: normal;
   }
 }

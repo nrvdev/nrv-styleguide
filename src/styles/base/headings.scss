@@ -1,0 +1,20 @@
+@import '../sass.scss';
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold;
+}
+
+h2 {
+  @include rem(font-size, 24px);
+}
+
+@media (min-width: $tablet) {
+
+}
+
+@media (min-width: $desktop) {
+
+}
