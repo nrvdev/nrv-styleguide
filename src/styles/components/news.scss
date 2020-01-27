@@ -1,0 +1,66 @@
+@import '../sass.scss';
+
+.news-component {
+  p {
+    color: $text-medium-grey;
+  }
+
+  .focused-article {
+    background-image: url('./assets/images/news-watermark.svg');
+    background-size: contain;
+  }
+
+  .article-image-wrapper {
+    border-top: solid 4px $dark-coral;
+  }
+
+  .date {
+    @include rem(font-size, 12px);
+    color: $dark-coral;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+
+    li {
+      width: calc(50% - 10px);
+      display: flex;
+      flex-wrap: wrap;
+
+      h3 {
+        @include rem(font-size, 14px);
+      }
+
+      h3,
+      p {
+        margin: 0;
+        margin-bottom: 5px;
+      }
+
+      .article-image-wrapper {
+        height: 110px;
+        
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  @media (min-width: $tablet) {
+
+  }
+  
+  @media (min-width: $desktop) {
+
+  }
+}
