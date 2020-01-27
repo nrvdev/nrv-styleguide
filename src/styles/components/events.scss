@@ -1,0 +1,35 @@
+@import '../sass.scss';
+
+.events-component {
+  h2 {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 15px;
+    }
+  }
+
+  ul {
+    border-top: solid 2px $black;
+
+    li {
+      height: 140px;
+      border-bottom: solid 2px $black;
+      display: flex;
+      align-items: center;
+
+      .date {
+        padding: 20px;
+      }
+    }
+  }
+
+  @media (min-width: $tablet) {
+
+  }
+  
+  @media (min-width: $desktop) {
+
+  }
+}

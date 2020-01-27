@@ -5,23 +5,28 @@
     background-image: url('./assets/images/hero-mobile.jpg');
   }
 
+  .logo-overlay {
+    display: none;
+  }
+
   .lead {
     @include rem(font-size, 26px);
     margin: 0;
     height: 400px;
     padding-bottom: 0;
+    font-weight: bold;
   }
 
   .follow {
     @include rem(font-size, 14px);
     font-weight: normal;
-    color: $medium-grey-2;
+    color: $text-dark-grey;
     text-align: center;
   }
 
   @media (min-width: $tablet) {
     .title {
-      padding-top: 80px;
+      padding-top: 40px;
       text-align: center;
     }
   }
@@ -33,11 +38,16 @@
 
     .lead {
       @include rem(font-size, 70px);
-      font-weight: bold;
       width: 75%;
       max-width: 1100px;
-      height: 800px;
+      height: 700px;
       padding-top: 80px;
+    }
+
+    .logo-overlay {
+      display: flex;
+      position: relative;
+      bottom: 60px;
     }
 
     .follow {
