@@ -6,6 +6,12 @@
   display: none;
 }
 
+.wrapper {
+    &.events-news-wrapper {
+      display: block;
+    }
+}
+
 @media (min-width: $tablet) {
   .tablet {
     display: block;
@@ -27,5 +33,21 @@
 
   .desktop {
     display: block;
+  }
+
+  .wrapper {
+    &.events-news-wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      .left {
+        width: 24%;
+      }
+
+      .right {
+        width: 70%;
+      }
+    }
   }
 }

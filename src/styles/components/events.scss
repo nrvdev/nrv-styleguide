@@ -30,6 +30,14 @@
   }
   
   @media (min-width: $desktop) {
+    h2 {
+      justify-content: center;
+    }
 
+    .more-events-button-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 }

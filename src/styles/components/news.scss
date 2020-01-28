@@ -30,6 +30,13 @@
       width: calc(50% - 10px);
       display: flex;
       flex-wrap: wrap;
+      margin-bottom: 20px;
+
+      .date,
+      h3,
+      p {
+        width: 100%;
+      }
 
       h3 {
         @include rem(font-size, 14px);
@@ -50,17 +57,46 @@
         }
       }
 
-      &:first-child {
+      &:nth-child(odd) {
         margin-right: 10px;
       }
     }
   }
 
   @media (min-width: $tablet) {
+    .focused-article {
+      background-image: none;
+    }
 
+    background-image: url('./assets/images/news-watermark.svg');
+    background-size: 30%;
+    background-position: 5% center;
+    background-repeat: no-repeat;
   }
   
   @media (min-width: $desktop) {
+    .focused-article {
+      img {
+        width: 100%;
+      }
+    }
 
+    ul {
+      justify-content: space-between;
+
+      li {
+        width: calc(70vw / 2 - 40px);
+        margin-bottom: 60px;
+        
+        .article-image-wrapper {
+          width: calc(100%);
+          height: calc(70vw / 4); 
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 }
