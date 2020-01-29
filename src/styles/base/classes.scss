@@ -47,6 +47,20 @@
   }
 }
 
+.button-link {
+  outline: none; // active state compensates for lack of outline
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &:active,
+  &:hover,
+  &:focus {
+    color: $dark-coral;
+    padding-bottom: 6px;
+    border-bottom: 4px solid $dark-coral;
+  }
+}
+
 @media (min-width: $tablet) {
 
 }
