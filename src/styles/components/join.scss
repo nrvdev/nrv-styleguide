@@ -1,0 +1,22 @@
+@import '../sass.scss';
+
+.join-component {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $tablet) {
+
+  }
+  
+  @media (min-width: $desktop) {
+
+  }
+}
