@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "clean": "rm -rf ./public/*.css",
     "start": "node-sass src/styles/styles.scss -o=public --output-style=compressed -w",
-    "build": "node-sass src/styles/styles.scss -o=public --output-style=compressed"
+    "build": "npm run clean && node-sass src/styles/styles.scss -o=public --output-style=compressed"
   },
   "repository": {
     "type": "git",
