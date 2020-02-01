@@ -106,6 +106,10 @@
     padding-top: 150px;
     width: 20vw;
 
+    .no-top-padding {
+      padding-top: 0;
+    }
+
     .filters-area {
       right: 0;
 
