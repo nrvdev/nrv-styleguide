@@ -1,0 +1,71 @@
+@import '../sass.scss';
+
+.dev-card-component {
+  width: 100%;
+  height: 570px;
+
+  .dev-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    overflow: hidden;
+    height: 225px;
+    width: 100%;
+    border-top: solid 3px $dark-coral;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .details {
+    h2 {
+      @include rem(font-size, 22px);
+      line-height: 24px;
+
+      span {
+        @include rem(font-size, 14px);
+        color: $medium-grey-2;
+      }
+    }
+
+    p {
+      color: $text-medium-grey;
+      padding-bottom: 30px;
+      border-bottom: solid 2px $dark-grey;
+    }
+  }
+
+  .skills {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    li {
+      @include rem(font-size, 10px);
+      @extend %font-league-mono;
+      height: 28px;
+      width: calc(50% - 14px);
+      background-color: $light-grey-2;
+      margin-bottom: 20px;
+      border: solid 2px $black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:nth-child(odd) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  @media (min-width: $tablet) {
+
+  }
+  
+  @media (min-width: $desktop) {
+
+  }
+}

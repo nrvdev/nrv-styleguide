@@ -1,6 +1,7 @@
 @import '../sass.scss';
 
 .dev-filters-component {
+  position: absolute;
   overflow-x: hidden;
 
   .show-filters-button,
@@ -17,8 +18,9 @@
 
   .hide-filters-button {
     position: absolute;
-    top: 70px;
+    top: 0;
     right: 0;
+    left: calc(100vw - 40px);
     outline: none;
     background-color: transparent;
     transition: background-color .5s;
@@ -101,6 +103,7 @@
   }
   
   @media (min-width: $desktop) {
+    padding-top: 150px;
     width: 20vw;
 
     .filters-area {

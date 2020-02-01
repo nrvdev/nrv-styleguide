@@ -1,14 +1,22 @@
 @import '../sass.scss';
 
 .devs-list-component {
-  position: absolute;
   top: 110px;
+
+  ul:first-child {
+    @extend .standard-padding;
+
+    .dev-card-wrapper {
+      margin-bottom: 50px;
+    }
+  }
 
   @media (min-width: $tablet) {
 
   }
   
   @media (min-width: $desktop) {
+    padding-top: 150px;
     width: calc(80vw - 200px);
     margin-left: 20vw;
     padding-left: 100px;
