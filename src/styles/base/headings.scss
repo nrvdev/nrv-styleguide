@@ -9,7 +9,6 @@ h4 {
 
 h2 {
   @include rem(font-size, 24px);
-  @extend %font-huge;
   color: $text-dark-grey;
 }
 

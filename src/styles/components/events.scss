@@ -2,6 +2,7 @@
 
 .events-component {
   h2 {
+    @extend %font-huge;
     display: flex;
     align-items: center;
 

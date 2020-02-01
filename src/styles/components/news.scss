@@ -8,6 +8,15 @@
   .focused-article {
     background-image: url('./assets/images/news-watermark.svg');
     background-size: contain;
+
+    .news-info {
+      padding-right: 120px;
+    }
+
+    .news-title {
+      @include rem(font-size, 53px);
+      line-height: 60px;
+    }
   }
 
   .article-image-wrapper {
@@ -15,10 +24,24 @@
   }
 
   .date {
+    @extend %font-league-mono;
     @include rem(font-size, 12px);
+    font-weight: bold;
     color: $dark-coral;
     margin-top: 15px;
     margin-bottom: 15px;
+  }
+
+  .news-title {
+    @extend %font-huge;
+    @include rem(font-size, 29px);
+    margin: 0;
+    line-height: 33px;
+  }
+
+  .news-details {
+    @extend %font-sofia-pro;
+    line-height: 25px;
   }
 
   ul {
@@ -39,12 +62,12 @@
       }
 
       h3 {
+        @extend %font-huge;
         @include rem(font-size, 14px);
       }
 
       h3,
       p {
-        margin: 0;
         margin-bottom: 5px;
       }
 
