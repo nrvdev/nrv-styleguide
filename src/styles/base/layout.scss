@@ -35,6 +35,10 @@
     display: block;
   }
 
+  .tablet-down {
+    display: none;
+  }
+
   .wrapper {
     &.events-news-wrapper {
       display: flex;
