@@ -6,6 +6,36 @@
 @import './form-elements.scss';
 @import './headings.scss';
 
+@font-face {
+  font-family: "Huge";
+  src: url("./assets/fonts/huge_agb_v5-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'League Mono';
+  font-weight: normal;
+  font-style: normal;
+  src: url('./assets/fonts/LeagueMono-Regular.woff2') format('woff2'),
+       url('./assets/fonts/LeagueMono-Regular.woff') format('woff'),
+       url('./assets/fonts/LeagueMonoVariable.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'League Mono';
+  font-weight: bold;
+  font-style: normal;
+  src: url('./assets/fonts/LeagueMono-Bold.woff2') format('woff2'),
+       url('./assets/fonts/LeagueMono-Bold.woff') format('woff'),
+       url('./assets/fonts/LeagueMono-Bold.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  font-weight: normal;
+  font-style: normal;
+  src: url('./assets/fonts/SofiaProRegular.woff') format('woff');
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -32,9 +62,10 @@ a {
   &:active, 
   &:hover,
   &:focus {
-    color: $light-coral;
+    color: $dark-coral;
     padding-bottom: 5px;
-    border-bottom: solid 1px $light-coral;
+    border-bottom: solid 1px $dark-coral;
+    font-weight: bold;
   }
 }
 

@@ -15,7 +15,14 @@ $translucent-coral: rgba(255, 74, 84, 0.15);
 // =================== Fonts =================== //
 %font-roboto {
   font-family: 'Roboto', sans-serif; 
-  font-weight: bold;
+}
+
+%font-huge {
+  font-family: 'Huge';
+}
+
+%font-league-mono {
+  font-family: 'League Mono';
 }
 // TODO: $font-operator-mono
 // TODO: $font-apercu-pro
