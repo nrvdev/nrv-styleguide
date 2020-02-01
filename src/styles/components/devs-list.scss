@@ -9,6 +9,9 @@
   }
   
   @media (min-width: $desktop) {
-
+    width: calc(80vw - 200px);
+    margin-left: 20vw;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
