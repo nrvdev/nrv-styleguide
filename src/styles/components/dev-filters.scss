@@ -1,0 +1,98 @@
+@import '../sass.scss';
+
+.dev-filters-component {
+
+  .show-filters-button,
+  .hide-filters-button {
+    height: 40px;
+    width: 40px;
+    margin: 0;
+    padding: 0;
+
+    button {
+      margin: 0;
+    }
+  }
+
+  .hide-filters-button {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    outline: none;
+    background-color: transparent;
+    transition: background-color .5s;
+
+    svg {
+      transition: fill .5s;
+      fill: transparent;
+      position: relative;
+      left: 10px;
+    }
+  }
+
+  .filters-area {
+    outline: none;
+    position: relative;
+    width: 100vw;
+    right: 100vw;
+    transition: margin-left .5s;
+
+    .show-filters-button {
+      background-color: $dark-coral;
+      fill: $white;
+      position: absolute;
+      left: 100vw;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      margin-left: 100vw;
+
+      .show-filters-button {
+        color: transparent;
+        outline: none;
+      }
+
+      &+.hide-filters-button {
+        background-color: $dark-coral;
+        display: block;
+        color: $black;
+
+        svg {
+          fill: $white;
+        }
+      }
+    }
+  }
+
+  h2 {
+    text-transform: uppercase;
+    border-bottom: solid 1px $black;
+    width: 225px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    margin-top: 0;
+  }
+
+  .filters-list {
+    ul {
+      padding-left: 30px;
+
+      li {
+        @include rem(font-size, 14px);
+        color: $text-medium-grey;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  @media (min-width: $tablet) {
+
+  }
+  
+  @media (min-width: $desktop) {
+
+  }
+}

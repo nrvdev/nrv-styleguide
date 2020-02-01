@@ -11,6 +11,13 @@
 
   .logo {
     width: 70px;
+
+    &:active,
+    &:focus,
+    &:hover {
+      padding: 0;
+      border: 0;
+    }
   }
 
   .menu-button {
