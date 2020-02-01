@@ -1,0 +1,14 @@
+@import '../sass.scss';
+
+.devs-list-component {
+  position: absolute;
+  top: 110px;
+
+  @media (min-width: $tablet) {
+
+  }
+  
+  @media (min-width: $desktop) {
+
+  }
+}
