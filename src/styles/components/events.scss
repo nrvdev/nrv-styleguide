@@ -28,6 +28,8 @@
       .details {
         @include rem(font-size, 14px);
         color: $medium-grey-2;
+        font-weight: bold;
+        line-height: 22px;
       }
     }
   }
