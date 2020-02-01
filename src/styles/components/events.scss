@@ -11,16 +11,23 @@
   }
 
   ul {
-    border-top: solid 2px $black;
+    border-top: solid 1px $black;
 
     li {
       height: 140px;
-      border-bottom: solid 2px $black;
+      border-bottom: solid 1px $black;
       display: flex;
       align-items: center;
 
       .date {
-        padding: 20px;
+        @include rem(font-size, 14px);
+        padding: 45px;
+        font-weight: bold;
+      }
+
+      .details {
+        @include rem(font-size, 14px);
+        color: $medium-grey-2;
       }
     }
   }
