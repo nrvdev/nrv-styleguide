@@ -76,7 +76,14 @@
 }
 
 @media (min-width: $tablet) {
+  .subtle-hero {
+    background-position: 20vw 60px;
+    background-repeat: no-repeat;
 
+    &.devs {
+      background-image: url('./assets/images/devs.svg');
+    }
+  }
 }
 
 @media (min-width: $desktop) {
@@ -88,14 +95,5 @@
   .standard-padding {
     padding-left: calc((100vw - 1140px) / 2);
     padding-right: calc((100vw - 1140px) / 2);
-  }
-
-  .subtle-hero {
-    background-position: 20vw 60px;
-    background-repeat: no-repeat;
-
-    &.devs {
-      background-image: url('./assets/images/devs.svg');
-    }
   }
 }

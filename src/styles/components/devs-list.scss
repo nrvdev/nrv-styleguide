@@ -1,10 +1,11 @@
 @import '../sass.scss';
+@import '../base/classes.scss';
 
 .devs-list-component {
   top: 110px;
 
   .dev-list {
-    @extend .standard-padding;
+    padding: 40px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -22,8 +23,9 @@
     padding-right: 50px;
 
     .dev-list {
-      padding: 0;
-      justify-content: space-evenly;
+      padding-left: 0;
+      padding-right: 0;
+      justify-content: space-between;
     }
 
     .dev-card-wrapper {
@@ -32,9 +34,14 @@
   }
   
   @media (min-width: $desktop) {
-    padding-top: 150px;
     width: calc(80vw - 200px);
-
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    .dev-list {
+      padding-top: 150px;
+    }
+    
     .dev-card-wrapper {
       width: 300px;
     }
