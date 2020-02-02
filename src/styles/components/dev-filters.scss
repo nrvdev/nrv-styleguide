@@ -3,6 +3,7 @@
 .dev-filters-component {
   position: absolute;
   overflow-x: hidden;
+  width: 100vw;
 
   .show-filters-button,
   .hide-filters-button {
@@ -91,20 +92,23 @@
         @include rem(font-size, 14px);
         color: $text-medium-grey;
         margin-bottom: 10px;
+
+        label {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
+        
+        input[type=checkbox] {
+          margin-right: 10px;
+        }
       }
     }
   }
 
   @media (min-width: $tablet) {
-    .hide-filters-button {
-      position: absolute;
-      top: 80px;
-    }
-  }
-  
-  @media (min-width: $desktop) {
-    padding-top: 150px;
     width: 20vw;
+    padding-top: 50px;
 
     .no-top-padding {
       padding-top: 0;
@@ -128,5 +132,9 @@
     .hide-filters-button {
       display: none;
     }
+  }
+  
+  @media (min-width: $desktop) {
+    padding-top: 150px;
   }
 }
