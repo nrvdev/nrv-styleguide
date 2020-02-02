@@ -64,6 +64,17 @@
   }
 }
 
+.subtle-hero {
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+
+  h1 {
+    visibility: hidden;
+  }
+}
+
 @media (min-width: $tablet) {
 
 }
@@ -77,5 +88,14 @@
   .standard-padding {
     padding-left: calc((100vw - 1140px) / 2);
     padding-right: calc((100vw - 1140px) / 2);
+  }
+
+  .subtle-hero {
+    background-position: 20vw 60px;
+    background-repeat: no-repeat;
+
+    &.devs {
+      background-image: url('./assets/images/devs.svg');
+    }
   }
 }
