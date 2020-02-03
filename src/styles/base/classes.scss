@@ -77,7 +77,7 @@
 
 @media (min-width: $tablet) {
   .subtle-hero {
-    background-position: 20vw 60px;
+    background-position: 20vw 120px;
     background-repeat: no-repeat;
 
     &.devs {
@@ -87,6 +87,10 @@
 }
 
 @media (min-width: $desktop) {
+  .subtle-hero {
+    background-position: 18vw 150px;
+  }
+
   .standard-margins {
     margin-left: calc((100vw - 1140px) / 2);
     margin-right: calc((100vw - 1140px) / 2);

@@ -108,7 +108,7 @@
 
   @media (min-width: $tablet) {
     width: 20vw;
-    padding-top: 50px;
+    padding-top: 150px;
 
     .no-top-padding {
       padding-top: 0;
@@ -116,6 +116,7 @@
 
     .filters-area {
       right: 0;
+      background-color: transparent;
 
       &:hover,
       &:active,
@@ -135,6 +136,6 @@
   }
   
   @media (min-width: $desktop) {
-    padding-top: 150px;
+    padding-top: 200px;
   }
 }
