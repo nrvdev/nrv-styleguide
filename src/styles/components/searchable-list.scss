@@ -1,16 +1,16 @@
 @import '../sass.scss';
 @import '../base/classes.scss';
 
-.devs-list-component {
+.searchable-list-component {
   top: 110px;
 
-  .dev-list {
+  .searchable-list {
     padding: 40px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
-    .dev-card-wrapper {
+    .card-wrapper {
       margin-bottom: 50px;
     }
   }
@@ -22,14 +22,14 @@
     padding-left: 50px;
     padding-right: 50px;
 
-    .dev-list {
+    .searchable-list {
       padding-top: 95px;
       padding-left: 0;
       padding-right: 0;
       justify-content: space-between;
     }
 
-    .dev-card-wrapper {
+    .card-wrapper {
       width: 45%;
     }
   }
@@ -39,11 +39,11 @@
     padding-left: 10px;
     padding-right: 10px;
     
-    .dev-list {
+    .searchable-list {
       padding-top: 150px;
     }
     
-    .dev-card-wrapper {
+    .card-wrapper {
       width: 300px;
     }
   }
