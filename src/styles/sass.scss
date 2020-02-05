@@ -39,6 +39,7 @@ $translucent-coral: rgba(255, 74, 84, 0.15);
 // =================== Layout =================== //
 $tablet: 768px;
 $desktop: 1140px;
+$desktop-1080: 1920px;
 
 // =================== Mixins =================== //
 @mixin rem($property, $values) {
