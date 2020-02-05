@@ -48,21 +48,13 @@
     }
     
     .card-wrapper {
-      width: 300px;
-
-      &.group {
-        width: calc((100% - 40px) / 2);
-      }
+      width: calc((100% - 40px) / 2);
     }
   }
 
   @media (min-width: $desktop-1080) {
     .card-wrapper {
-      width: 300px;
-
-      &.group {
-        width: calc((100% - 120px) / 3);
-      }
+      width: calc((100% - 120px) / 3);
     }
   }
 }
