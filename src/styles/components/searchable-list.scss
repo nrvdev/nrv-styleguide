@@ -31,6 +31,10 @@
 
     .card-wrapper {
       width: 45%;
+
+      &.group {
+        width: 100%;
+      }
     }
   }
   
